@@ -116,6 +116,8 @@ nav:
   - Home: index.md
   - Getting started:
       - Overview: getting-started/overview.md
+  - Guides:
+      - Convert files to Markdown: guides/convert-files-to-markdown.md
   - How-to:
       - Password reset: how-to/password-reset.md
       - VPN access: how-to/vpn-access.md

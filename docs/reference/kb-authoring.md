@@ -36,3 +36,9 @@ Articles with clear titles, short procedures, and consistent headings are easier
 - Use clear section headings for every major topic
 - Prefer numbered steps for procedures and bullets for options
 - Group content by audience need: how-to, policy, or reference
+
+## Importing a large file library
+
+To convert an entire folder of Word/PDF files into Markdown and wire them into this site, see:
+
+**[Convert files to Markdown & build this site](../guides/convert-files-to-markdown.md)**

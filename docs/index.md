@@ -52,6 +52,14 @@ hide:
 
     [:octicons-arrow-right-24: Escalation matrix](reference/escalation-matrix.md)
 
+-   :material-file-document-multiple:{ .lg .middle } **Build guide**
+
+    ---
+
+    Convert a whole file library to Markdown and rebuild this site
+
+    [:octicons-arrow-right-24: Convert files to Markdown](guides/convert-files-to-markdown.md)
+
 </div>
 
 ## Popular articles
@@ -71,6 +79,10 @@ hide:
     **Getting started**
 
     - [Service Desk Overview](getting-started/overview.md)
+
+    **Guides**
+
+    - [Convert files to Markdown & build this site](guides/convert-files-to-markdown.md)
 
     **How-to**
 
