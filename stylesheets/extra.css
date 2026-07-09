@@ -113,3 +113,34 @@
 .md-search__input {
   border-radius: 0.6rem;
 }
+
+/* Header feature-showcase icon (next to palette / search) */
+.md-header__feature-showcase {
+  color: var(--md-primary-fg-color--light, #a5b4fc);
+}
+
+.md-header__feature-showcase:hover {
+  color: var(--md-accent-fg-color, #22d3ee);
+}
+
+.md-header__feature-showcase svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Feature showcase page polish */
+.showcase-hero {
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  border-radius: 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--sd-violet) 40%, transparent);
+  background:
+    radial-gradient(circle at 10% 20%, color-mix(in srgb, var(--sd-indigo) 28%, transparent), transparent 45%),
+    radial-gradient(circle at 90% 10%, color-mix(in srgb, var(--sd-cyan) 22%, transparent), transparent 40%),
+    color-mix(in srgb, var(--md-default-fg-color) 3%, transparent);
+}
+
+.showcase-hero p {
+  margin: 0.35rem 0 0;
+  opacity: 0.9;
+}
