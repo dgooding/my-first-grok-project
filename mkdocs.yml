@@ -1,56 +1,135 @@
-site_name: My First Grok Project
-site_description: Documentation for my first Grok Build project
-repo_url: ""  # set after you create a GitHub repo, e.g. https://github.com/you/my-first-grok-project
+site_name: Contoso Service Desk
+site_description: Searchable IT service desk knowledge base — sample project for learning MkDocs
+site_url: https://dgooding.github.io/my-first-grok-project/
+repo_url: https://github.com/dgooding/my-first-grok-project
+repo_name: dgooding/my-first-grok-project
+edit_uri: edit/master/docs/
+copyright: Sample content for MkDocs training · Contoso is a fictional company
 
 theme:
   name: material
+  custom_dir: overrides
+  language: en
+  favicon: assets/favicon.svg
+  logo: assets/logo.svg
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
+        icon: material/brightness-auto
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to system preference
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - search.highlight
+    - announce.dismiss
+    - content.action.edit
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
 
 plugins:
-  - search
+  - search:
+      lang: en
+      separator: '[\s\-_,:!=\[\]()"/]+|(?!=\b)(?=[A-Z][a-z])|\.(?!\d)|(?<=\d)\.'
+  - tags
   - git-revision-date-localized:
       enable_creation_date: true
-      type: date
-  # Shows GitHub committers; needs a public GitHub repo + network.
-  # - git-committers:
-  #     repository: your-username/my-first-grok-project
-  #     branch: main
+      enable_git_follow: false
+      type: timeago
+      fallback_to_build_date: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dgooding/my-first-grok-project
+      name: Repository
+  generator: false
+  tags: {}
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
+  - def_list
+  - footnotes
   - md_in_html
   - tables
   - toc:
       permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 nav:
   - Home: index.md
+  - Getting started:
+      - Overview: getting-started/overview.md
+  - How-to:
+      - Password reset: how-to/password-reset.md
+      - VPN access: how-to/vpn-access.md
+      - Software requests: how-to/software-requests.md
+      - New hire checklist: how-to/new-hire-checklist.md
+      - Email troubleshooting: how-to/email-troubleshooting.md
+      - Remote desktop: how-to/remote-desktop.md
+      - Hardware requests: how-to/hardware-requests.md
+      - Printers & peripherals: how-to/printers-peripherals.md
+  - Policies:
+      - Incident severity: policies/incident-severity.md
+      - SLA overview: policies/sla-overview.md
+      - Change management: policies/change-management.md
+  - Reference:
+      - Escalation matrix: reference/escalation-matrix.md
+      - KB authoring: reference/kb-authoring.md
+      - Security incident: reference/security-incident.md
