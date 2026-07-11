@@ -44,6 +44,19 @@
   margin: 0.5rem 0 1.25rem;
 }
 
+.hero-search-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--sd-indigo) 35%, transparent);
+  background: color-mix(in srgb, var(--sd-indigo) 10%, transparent);
+  box-shadow: 0 0 0 4px var(--sd-glow);
+  margin-bottom: 1.75rem !important;
+  font-size: 0.92rem;
+}
+
 /* Cards polish */
 .md-typeset .grid.cards > ul > li,
 .md-typeset .grid.cards > ol > li {
@@ -85,6 +98,11 @@
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
   height: 1.6rem;
+}
+
+.footer-note {
+  opacity: 0.65;
+  font-size: 0.85rem;
 }
 
 /* Search modal emphasis */
