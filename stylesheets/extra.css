@@ -1,170 +1,324 @@
-/* Service Desk Knowledge Base — theme accents */
+/* Contoso IT Knowledge — minimalist enterprise theme */
+
 :root {
-  --sd-indigo: #4f46e5;
-  --sd-violet: #7c3aed;
-  --sd-cyan: #06b6d4;
-  --sd-glow: rgba(79, 70, 229, 0.35);
+  --corp-ink: #0b1220;
+  --corp-slate: #1e293b;
+  --corp-muted: #64748b;
+  --corp-line: #e2e8f0;
+  --corp-soft: #f8fafc;
+  --corp-accent: #0f766e; /* teal — restrained corporate accent */
+  --corp-accent-soft: #ccfbf1;
 }
 
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #4f46e5;
-  --md-primary-fg-color--light: #818cf8;
-  --md-primary-fg-color--dark: #3730a3;
-  --md-accent-fg-color: #06b6d4;
-  --md-typeset-a-color: #4f46e5;
+  --md-primary-fg-color: #0f172a;
+  --md-primary-fg-color--light: #334155;
+  --md-primary-fg-color--dark: #020617;
+  --md-accent-fg-color: var(--corp-accent);
+  --md-typeset-a-color: #0f766e;
+  --md-default-bg-color: #ffffff;
+  --md-code-bg-color: #f1f5f9;
 }
 
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #818cf8;
-  --md-primary-fg-color--light: #a5b4fc;
-  --md-primary-fg-color--dark: #6366f1;
-  --md-accent-fg-color: #22d3ee;
-  --md-typeset-a-color: #a5b4fc;
-  --md-default-bg-color: #0b1020;
-  --md-default-bg-color--light: #121a2f;
-  --md-default-bg-color--lighter: #1a243d;
-  --md-default-bg-color--lightest: #243050;
+  --md-primary-fg-color: #e2e8f0;
+  --md-primary-fg-color--light: #f8fafc;
+  --md-primary-fg-color--dark: #94a3b8;
+  --md-accent-fg-color: #2dd4bf;
+  --md-typeset-a-color: #5eead4;
+  --md-default-bg-color: #0b1220;
+  --md-default-bg-color--light: #111827;
+  --md-default-bg-color--lighter: #1e293b;
+  --md-default-bg-color--lightest: #334155;
+  --md-code-bg-color: #111827;
 }
 
-/* Hero */
+/* Typography — calm, editorial */
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--corp-slate);
+}
+
+[data-md-color-scheme="slate"] .md-typeset {
+  color: #cbd5e1;
+}
+
 .md-typeset h1 {
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  background: linear-gradient(120deg, var(--sd-indigo), var(--sd-violet) 45%, var(--sd-cyan));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  font-size: 1.85rem;
+  color: var(--corp-ink);
+  border-bottom: 1px solid var(--corp-line);
+  padding-bottom: 0.55rem;
+  margin-bottom: 1.1rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #f8fafc;
+  border-bottom-color: #1e293b;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 1.75rem;
+  border-bottom: none;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  color: var(--corp-slate);
 }
 
 .hero-lead {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  opacity: 0.9;
-  max-width: 42rem;
-  margin: 0.5rem 0 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--corp-muted);
+  max-width: 38rem;
+  margin: 0 0 1.75rem;
+  font-weight: 400;
 }
 
-/* Cards polish */
-.md-typeset .grid.cards > ul > li,
-.md-typeset .grid.cards > ol > li {
-  border-radius: 0.9rem;
-  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+[data-md-color-scheme="slate"] .hero-lead {
+  color: #94a3b8;
 }
 
-.md-typeset .grid.cards > ul > li:hover,
-.md-typeset .grid.cards > ol > li:hover {
-  transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--sd-indigo) 55%, transparent);
-  box-shadow: 0 16px 40px rgba(79, 70, 229, 0.18);
-}
-
-/* Tables */
-.md-typeset table:not([class]) {
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
-}
-
-.md-typeset table:not([class]) th {
-  background: linear-gradient(120deg, #4f46e5, #7c3aed);
-  color: #fff;
-  font-weight: 600;
-}
-
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
-  background: linear-gradient(120deg, #4338ca, #6d28d9);
-}
-
-/* Header bar subtle glass */
+/* Header — flat, quiet */
 .md-header {
-  backdrop-filter: blur(10px);
+  background-color: var(--md-primary-fg-color);
+  box-shadow: none;
+  border-bottom: 1px solid color-mix(in srgb, #fff 8%, transparent);
+}
+
+[data-md-color-scheme="default"] .md-header {
+  background-color: #0f172a;
 }
 
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
-  height: 1.6rem;
+  height: 1.35rem;
 }
 
-/* Search modal emphasis */
 .md-search__form {
-  border-radius: 0.6rem;
+  border-radius: 0.35rem;
+  background-color: color-mix(in srgb, #fff 12%, transparent);
 }
 
 .md-search__input {
-  border-radius: 0.6rem;
+  border-radius: 0.35rem;
 }
 
-/* Header feature-showcase icon (next to palette / search) */
+/* Sidebar */
+.md-nav__title {
+  font-weight: 600;
+}
+
+.md-nav--primary .md-nav__title {
+  background: transparent;
+}
+
+/* Cards — thin border, no heavy shadow */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border-radius: 0.5rem;
+  border: 1px solid var(--corp-line);
+  box-shadow: none;
+  background: var(--corp-soft);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li {
+  border-color: #1e293b;
+  background: #111827;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  transform: none;
+  border-color: var(--corp-accent);
+  box-shadow: none;
+}
+
+/* Tables — corporate clean */
+.md-typeset table:not([class]) {
+  border-radius: 0.35rem;
+  overflow: hidden;
+  box-shadow: none;
+  border: 1px solid var(--corp-line);
+  font-size: 0.78rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  border-color: #1e293b;
+}
+
+.md-typeset table:not([class]) th {
+  background: #0f172a;
+  color: #f8fafc;
+  font-weight: 550;
+  letter-spacing: 0.01em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: #1e293b;
+}
+
+.md-typeset table:not([class]) tr:nth-child(2n) {
+  background-color: color-mix(in srgb, var(--corp-soft) 80%, transparent);
+}
+
+/* Admonitions — quieter */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.4rem;
+  box-shadow: none;
+  font-size: 0.78rem;
+}
+
+/* Buttons */
+.md-typeset .md-button {
+  border-radius: 0.3rem;
+  font-weight: 500;
+  padding: 0.45em 1.1em;
+}
+
+.md-typeset .md-button--primary {
+  background-color: #0f172a;
+  border-color: #0f172a;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  background-color: #2dd4bf;
+  border-color: #2dd4bf;
+  color: #042f2e;
+}
+
+/* Header showcase icon */
 .md-header__feature-showcase {
-  color: var(--md-primary-fg-color--light, #a5b4fc);
+  opacity: 0.85;
 }
 
 .md-header__feature-showcase:hover {
-  color: var(--md-accent-fg-color, #22d3ee);
+  opacity: 1;
+  color: #5eead4;
 }
 
 .md-header__feature-showcase svg {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.15rem;
+  height: 1.15rem;
 }
 
-/* Feature showcase page polish */
+/* Showcase hero — restrained */
 .showcase-hero {
-  padding: 1rem 1.25rem;
+  padding: 1.1rem 1.25rem;
   margin: 0 0 1.5rem;
-  border-radius: 0.9rem;
-  border: 1px solid color-mix(in srgb, var(--sd-violet) 40%, transparent);
-  background:
-    radial-gradient(circle at 10% 20%, color-mix(in srgb, var(--sd-indigo) 28%, transparent), transparent 45%),
-    radial-gradient(circle at 90% 10%, color-mix(in srgb, var(--sd-cyan) 22%, transparent), transparent 40%),
-    color-mix(in srgb, var(--md-default-fg-color) 3%, transparent);
+  border-radius: 0.45rem;
+  border: 1px solid var(--corp-line);
+  background: var(--corp-soft);
+}
+
+[data-md-color-scheme="slate"] .showcase-hero {
+  border-color: #1e293b;
+  background: #111827;
 }
 
 .showcase-hero p {
-  margin: 0.35rem 0 0;
-  opacity: 0.9;
+  margin: 0.4rem 0 0;
+  color: var(--corp-muted);
 }
 
-/* Progress bars (pymdownx.progressbar) */
+/* Progress bars */
 .progress-label {
   position: absolute;
   width: 100%;
   margin: 0;
   color: #fff;
   text-align: center;
-  font-size: 0.75rem;
-  line-height: 1.6rem;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
+  font-size: 0.7rem;
+  line-height: 1.35rem;
 }
 
 .progress-bar {
   display: block;
-  height: 1.6rem;
-  border-radius: 0.4rem;
-  background-color: color-mix(in srgb, var(--sd-indigo) 85%, #000);
-  background-image: linear-gradient(
-    120deg,
-    var(--sd-indigo),
-    var(--sd-violet),
-    var(--sd-cyan)
-  );
+  height: 1.35rem;
+  border-radius: 0.25rem;
+  background-color: var(--corp-accent);
 }
 
 .progress {
   display: block;
   width: 100%;
-  margin: 0.4rem 0 1rem;
-  height: 1.6rem;
-  background-color: color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
-  border-radius: 0.4rem;
+  margin: 0.35rem 0 0.9rem;
+  height: 1.35rem;
+  background-color: #e2e8f0;
+  border-radius: 0.25rem;
   position: relative;
   overflow: hidden;
 }
 
-/* Status dots in tables / cards */
-.red { color: #ef4444; }
-.orange { color: #f59e0b; }
-.green { color: #22c55e; }
-.blue { color: #3b82f6; }
+[data-md-color-scheme="slate"] .progress {
+  background-color: #1e293b;
+}
+
+/* Status colors */
+.red { color: #dc2626; }
+.orange { color: #d97706; }
+.green { color: #059669; }
+.blue { color: #2563eb; }
+
+/* Meta strip on home */
+.meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding: 0.85rem 0;
+  margin: 0 0 1.75rem;
+  border-top: 1px solid var(--corp-line);
+  border-bottom: 1px solid var(--corp-line);
+  font-size: 0.75rem;
+  color: var(--corp-muted);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+[data-md-color-scheme="slate"] .meta-strip {
+  border-color: #1e293b;
+}
+
+.meta-strip strong {
+  color: var(--corp-ink);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.82rem;
+}
+
+[data-md-color-scheme="slate"] .meta-strip strong {
+  color: #f1f5f9;
+}
+
+/* Footer quieter */
+.md-footer {
+  background-color: #0f172a;
+}
+
+.md-footer-meta {
+  background-color: #020617;
+}
+
+/* Code blocks */
+.md-typeset pre > code {
+  border-radius: 0.35rem;
+}
+
+/* Announcement bar */
+.md-banner {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.md-banner a {
+  color: #5eead4;
+}

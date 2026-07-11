@@ -2,74 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/architecture/application-portfolio/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/architecture/data-classification/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/architecture/enterprise-overview/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/architecture/identity/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/architecture/network/</loc>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/getting-started/overview/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
-         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/guides/convert-files-to-markdown/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/getting-started/using-the-kb/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/governance/compliance/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/governance/service-ownership/</loc>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/email-troubleshooting/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/hardware-requests/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/mfa-recovery/</loc>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/new-hire-checklist/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/password-reset/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/printers-peripherals/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/remote-desktop/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/shared-mailbox/</loc>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/software-requests/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/how-to/vpn-access/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/operations/capacity-continuity/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/operations/major-incident/</loc>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/policies/change-management/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/policies/incident-severity/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/policies/sla-overview/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/reference/escalation-matrix/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/reference/kb-authoring/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/reference/security-incident/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/services/catalog/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/services/cloud-platforms/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/services/collaboration/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/services/end-user-computing/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/services/identity-access/</loc>
+         <lastmod>2026-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/services/network-remote/</loc>
+         <lastmod>2026-07-11</lastmod>
     </url>
     <url>
          <loc>https://dgooding.github.io/MKDocs-figuring-out-stuff/showcase/advanced-features/</loc>
-         <lastmod>2026-07-09</lastmod>
+         <lastmod>2026-07-11</lastmod>
     </url>
 </urlset>
