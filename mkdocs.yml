@@ -58,9 +58,9 @@ theme:
     - toc.follow
 
 plugins:
-  - search:
+  # Material's search plugin is required for the header search bar UI
+  - material/search:
       lang: en
-      separator: '[\s\-_,:!=\[\]()"/]+|(?!=\b)(?=[A-Z][a-z])|\.(?!\d)|(?<=\d)\.'
   - tags
   - git-revision-date-localized:
       enable_creation_date: true
