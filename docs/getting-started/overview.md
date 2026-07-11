@@ -17,9 +17,9 @@ Contoso IT Service Desk is the **single point of contact** for technology issues
 
 | Channel | When to use | Details |
 |---------|-------------|---------|
-| :material-web: **Portal** | Preferred for most requests | [support.contoso.example](https://support.contoso.example) |
-| :material-email: **Email** | Non-urgent, attach screenshots | servicedesk@contoso.example |
-| :material-phone: **Phone** | Outages & Sev 1 | +1 (555) 010-2000 |
+| :material-web: **Portal** | Preferred for most requests | `support.contoso.example` |
+| :material-email: **Email** | Non-urgent, attach screenshots | `servicedesk@contoso.example` |
+| :material-phone: **Phone** | Outages & Sev 1 | `+1 (555) 010-2000` |
 | :material-chat: **Chat** | Quick questions | Employee portal, 08:00–17:00 |
 
 ## What we support

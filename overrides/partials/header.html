@@ -54,6 +54,7 @@
     {% if config.extra.alternate %}
       {% include "partials/alternate.html" %}
     {% endif %}
+    {#- Prefer Material search; fall back to classic search plugin if present -#}
     {% if "material/search" in config.plugins %}
       {% set search = config.plugins["material/search"] | attr("config") %}
       {% if search.enabled %}
@@ -63,6 +64,12 @@
         </label>
         {% include "partials/search.html" %}
       {% endif %}
+    {% elif "search" in config.plugins %}
+      <label class="md-header__button md-icon" for="__search">
+        {% set icon = config.theme.icon.search or "material/magnify" %}
+        {% include ".icons/" ~ icon ~ ".svg" %}
+      </label>
+      {% include "partials/search.html" %}
     {% endif %}
     {% if config.repo_url %}
       <div class="md-header__source">

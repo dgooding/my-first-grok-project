@@ -52,7 +52,7 @@ hide:
 
     ---
 
-    Convert a whole file library to Markdown and rebuild this site
+    Convert a file library to Markdown and rebuild this site
 
     [:octicons-arrow-right-24: Convert files to Markdown](guides/convert-files-to-markdown.md)
 
@@ -68,37 +68,3 @@ hide:
 | Security | [Security incident quick reference](reference/security-incident.md) |
 | Onboarding | [New hire IT checklist](how-to/new-hire-checklist.md) |
 | Email | [Email troubleshooting](how-to/email-troubleshooting.md) |
-
-## Full catalog
-
-??? abstract "All articles"
-    **Getting started**
-
-    - [Service Desk Overview](getting-started/overview.md)
-
-    **Guides**
-
-    - [Convert files to Markdown & build this site](guides/convert-files-to-markdown.md)
-
-    **How-to**
-
-    - [Password Reset](how-to/password-reset.md)
-    - [VPN Access](how-to/vpn-access.md)
-    - [Software Requests](how-to/software-requests.md)
-    - [New Hire Checklist](how-to/new-hire-checklist.md)
-    - [Email Troubleshooting](how-to/email-troubleshooting.md)
-    - [Remote Desktop SOP](how-to/remote-desktop.md)
-    - [Hardware Requests](how-to/hardware-requests.md)
-    - [Printers & Peripherals](how-to/printers-peripherals.md)
-
-    **Policies**
-
-    - [Incident Severity](policies/incident-severity.md)
-    - [SLA Overview](policies/sla-overview.md)
-    - [Change Management](policies/change-management.md)
-
-    **Reference**
-
-    - [Escalation Matrix](reference/escalation-matrix.md)
-    - [KB Authoring](reference/kb-authoring.md)
-    - [Security Incident](reference/security-incident.md)

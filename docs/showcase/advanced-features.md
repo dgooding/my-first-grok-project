@@ -17,8 +17,7 @@ hide:
 
 Not a tutorial — a live gallery of Material for MkDocs capabilities. Open this anytime from the **✦ star** in the header.
 
-[Service desk home](../index.md){ .md-button .md-button--primary }
-[Incident severity](../policies/incident-severity.md){ .md-button }
+[Back to home](../index.md){ .md-button .md-button--primary }
 
 </div>
 
@@ -94,7 +93,7 @@ Service desk portal — 99.70%
 
 === "End user"
 
-    1. Open [password.contoso.example](https://password.contoso.example)
+    1. Open `password.contoso.example`
     2. Complete MFA
     3. Set a 14+ character password
     4. Sign out of all apps and back in
@@ -146,7 +145,7 @@ def route(impact: Impact) -> str:
 2.  Broad outages open the major-incident path.
 3.  Multi-user, no workaround → escalate early.
 
-Keys you will use daily: ++ctrl+k++ search · ++period++ command palette (where enabled) · ++escape++ close overlays.
+Keys on this site: ++slash++ opens search · theme toggle switches light/dark · star opens this showcase.
 
 Marked revisions: the SLA is ==four hours== for Sev 3 (was ~~eight hours~~).
 
@@ -244,7 +243,8 @@ journey
         - navigation.instant
         - search.suggest
         - content.code.annotate
-        - content.tabs.link
+    plugins:
+      - material/search   # required for header search bar
     markdown_extensions:
       - admonition
       - pymdownx.tabbed:
@@ -323,10 +323,10 @@ journey
 ## Checklists & definitions
 
 - [x] Sticky navigation tabs  
-- [x] Instant loading + search suggest  
-- [x] Custom header action (✦ showcase)  
-- [x] Mermaid + annotated code  
-- [ ] Optional: blog plugin, versioning, i18n  
+- [x] Instant loading and search suggest  
+- [x] Header search (`material/search`)  
+- [x] Custom header action (star → showcase)  
+- [x] Mermaid and annotated code  
 
 Incident
 :   Unplanned service interruption or degradation.

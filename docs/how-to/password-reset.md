@@ -16,7 +16,7 @@ Prefer **self-service**. Agents use the procedure below only when self-service f
 
 ## Self-service steps
 
-1. Go to [password.contoso.example](https://password.contoso.example)
+1. Go to `password.contoso.example`
 2. Enter your work email and complete the MFA challenge
 3. Choose a new password (14+ characters, mixed case, number, symbol)
 4. Sign out of all sessions, then sign back in

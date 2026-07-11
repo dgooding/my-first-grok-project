@@ -43,7 +43,6 @@ theme:
     - content.tooltips
     - navigation.expand
     - navigation.footer
-    - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.path
